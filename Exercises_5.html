@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Exercise 5.1</title>
+
+    <h1>Ecercise 5.1</h1>
+
+    Name:<br>
+    <input type="text" name="name">
+    <br>
+    Birthday:<br>
+    <input type="date" date="bithday">
+    <br><br>
+    <input type="submit">
+
+
+  </head>
+  <body>
+    <button id="click_me">Click Me!</button>
+    <script language="javascript">
+      let year         = 2018,
+          counter_display = document.getElementById('counter'),
+          button          = document.getElementById('press_me');
+
+      button.addEventListener('click', function() {
+        counter++;
+        counter_display.innerHTML = counter;
+      });
+    </script>

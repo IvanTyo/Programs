@@ -21,9 +21,11 @@ console.log(newarr);
 console.log('______________________________________');
 }
 
-return true
 
-console.log(newarr);
+console.log('The new reverse array is: ');
+return (newarr);
+
+//console.log(newarr);
 }
 
 
