@@ -1,74 +1,185 @@
-//Given an array of objects with
- //"first_name" and "last_name" fields,
- // write a callback for the ".sort" function to sort the
- //names alphabetically by last name. If two last names are the same,
- //then sort those by first name.
+/*Given an array of objects with
+ "first_name" and "last_name" fields,
+  write a callback for the ".sort" function to sort the
+ names alphabetically by last name. If two last names are the same,
+ then sort those by first name.
+ */
 
  let playerOne = {
    firstName:'Ivan',
    lastName: 'Tamayo',
-   age: '41',
-   instrument: 'Guitar'
+
  };
  let playerTwo = {
    firstName: 'Victor',
    lastName: 'Hurtado',
-   age: '35',
-   instrument: 'Lead Guitar'
+
  };
  let playerThree = {
    firstName: 'Miguel Angel',
    lastName: 'Castellanos',
-   age: '34',
-   instrument: 'Bass'
+
  };
  let playerFour = {
    firstName: 'Jose',
    lastName: 'Tamayo',
-   age: '35',
-   instrument: 'Drums'
+
  };
 
- let cikatriz = [playerOne, playerTwo, playerThree, playerFour];
+ let cikatriz = [playerTwo, playerThree, playerFour, playerOne,];
+
+
+console.log(cikatriz);
+
+
+function sorted(arr) {
+  arr.sort(function(a,b){
+
+    //make strings equals to compare...
+  var lastName1 = a.lastName.toUpperCase();
+  var lastName2 = b.lastName.toUpperCase();
+  var firstName1 = a.firstName.toUpperCase();
+  var firstName2 = b.firstName.toUpperCase();
+
+  //Do comparison, looks like a and b are internalized...???
+  if (lastName1 < lastName2){
+  return -1;
+}
+  else if (lastName1 > lastName2) {
+   return 1;
+ }
+   if (firstName1 < firstName2){
+   return -1;
+ }
+
+
+ else if (firstName1 > firstName2) {
+   return 1
+ } else {
+  return 0;
+ }
+})
+return arr;
+
+};
+
+
+
+//console.log(cikatriz);
+console.log('**********************');
+console.log(sorted(cikatriz));
+
+/* cikatriz.sort(function(a,b){
+  var lastName1 = a.lastName.toUpperCase();
+  var lastName2 = b.lastName.toUpperCase();
+  if (lastName1 < lastName2)
+  return 0;
+  if (lastName1 > lastName2) {
+  return 0;
+}
+
+return 0;
+
+}) */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ //cikatriz.sort();
+  //console.log(cikatriz);
+
+//function sort(arr){
+  //arr.sort();
+  //console.log(arr);
+
+
+
+//console.log(sort(cikatriz));
+
+ //console.log(cikatriz);
 
 //console.log(cikatriz[1].lastName);
 
-function sort(arr) {
-  newArr=[];
+/*function sortlastNam(arr, callback) {
   for (var i = 0; i < arr.length; i++) {
-    //console.log(arr[i].lastName);
-    newArr.push(arr[i].lastName);
-    //newSort(newArr);
-    if (arr[i].lastName == arr[i].lastName) {
 
-      newArr.push(arr[i].firstName);
+
+
+      //newArr.push(arr[i].lastName);
+      //newSort(newArr);
+      //callback=newArr
+    if (arr[i].lastName != arr[q].lastName) {
+      newArr.push(arr[i].lastName);
+      newSort(newArr);
+      q+=1
+    } newArr.push(arr[i].firstName);
+      newSort(newArr);
+
+
+
 
     }
+  }*/
 
-  }
-  newSort(newArr);
+//arr3 = newArr.concat(newArr2)
+//newSort(arr3);
+
+    //newArr.push(arr[i].lastName);
+    //newSort(newArr);
+    //if (arr[i].lastName == arr[i].lastName) {
+
+      //newArr.push(arr[i].firstName);
 
 
-}
+
+
+  //newSort(arr);
+
+
+
 
 //a.sort();
 //console.log(a);
 
 //console.log(a(cikatriz));
 
-sort(cikatriz);
+//console.log(sort(cikatriz));
 
 //console.log('-_____________________-');
 
 //console.log(newArr);
 
-function newSort(arr) {
+//function newSort(arr, sOut) {
 
-  arr.sort();
-  console.log(arr);
+  //p = arr.sort();
+  //console.log(newArr);
 
-}
 
+
+//function sOut(p) {
+  //console.log(p);
+
+
+//}
+
+
+//console.log(p[1]);
+
+
+
+//console.log(cikatriz);
 
 //newSort(newArr);
 
@@ -148,3 +259,16 @@ function newSort(arr) {
 
   //console.log(x[keys]);
 //console.log(callback(x));
+
+
+
+
+/* console.log('____________________');
+
+
+console.log(cikatriz[1]);
+
+
+
+
+console.log(playerTwo.lastName);*/

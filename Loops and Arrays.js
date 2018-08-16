@@ -33,7 +33,7 @@ console.log('------------------');
 console.log('"sort" Funtion....');
 let arr1 = [4,2,3,-6,1];
 
-let sorted = arr1.sort(function(a,b ) {
+let sorted = arr1.sort(function(a,b) {
   if ( a < 0 ) a = +a;
   if ( b < 0 ) b = +b;
   if ( a > b ) return -1;

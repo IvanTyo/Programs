@@ -19,13 +19,15 @@ myImage.id = 'James';
 let output_node = document.body;
 output_node.appendChild(myImage);
 document.getElementById('James').addEventListener('click',
-    function (event) {
-      console.log(event);
-      doFunction('James');
+    function() {
+      console.log();
+      doFunction();
       });
 
-function doFunction(theId) {
-  let myThing = document.getElementById(theId);
+function doFunction() {
+  console.log("James, Pleased to Meet You");
+
+  //let myThing = document.getElementById(theId);
 
 }
 
