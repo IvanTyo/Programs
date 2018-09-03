@@ -8,16 +8,16 @@ create table artist (
 );
 
 create table albums (
-  albums_id serial primary key,
+  album_id serial primary key,
   album_title varchar(100) not null,
   release_date date,
-  artist_id integer not null references artist(id)
+  artist_id integer not null references artist(artist_id)
 );
 
 create table tracks (
   id serial primary key,
   track_title varchar(50) not null,
-  track_lenght integer(10),
+  track_lenght integer,
   composer_name varchar(100) not null,
-  album_id integer not null references albums(id)
+  album_id integer not null references albums(album_id)
 );
