@@ -14,17 +14,17 @@ INSERT INTO artist (
     );
 
 INSERT INTO artist (
-  first_name,
-  last_name,
-  dateof_birth,
-  cityof_birth,
-  genre
-)
-  VALUES (
-    'The Beatles',
-    'The Beatles', to_date('1960-1-2', 'YYYY-MM-DD'),
-    'Leverpool, England',
-    'Pop Rock'
+    first_name,
+    last_name,
+    dateof_birth,
+    cityof_birth,
+    genre
+  )
+    VALUES (
+      'The Beatles',
+      'The Beatles', to_date('1960-1-2', 'YYYY-MM-DD'),
+      'Leverpool, England',
+      'Pop Rock'
   );
 
 INSERT INTO artist (
@@ -42,7 +42,7 @@ INSERT INTO artist (
       'Pop, Rock and Rol'
     );
 
-    INSERT INTO artist (
+INSERT INTO artist (
         first_name,
         last_name,
         dateof_birth,
@@ -74,9 +74,8 @@ INSERT INTO artist (
       );
 
 
-
-  INSERT INTO albums (
-      albums_title,
+INSERT INTO albums (
+      album_title,
       release_date,
       artist_id
     )
@@ -88,19 +87,19 @@ INSERT INTO artist (
 
 
 INSERT INTO albums (
-  albums_title,
-  release_date,
-  artist_id
-)
-  VALUES (
-    'The Voice of Frank Sinatra',
-    to_date('1946-3-4', 'YYYY-MM-DD'),
-    '4'
+    album_title,
+    release_date,
+    artist_id
+  )
+    VALUES (
+      'The Voice of Frank Sinatra',
+      to_date('1946-3-4', 'YYYY-MM-DD'),
+      '4'
   );
 
 
-  INSERT INTO albums (
-    albums_title,
+INSERT INTO albums (
+    album_title,
     release_date,
     artist_id
   )
@@ -113,19 +112,19 @@ INSERT INTO albums (
 
 
 INSERT INTO albums (
-  albums_title,
-  release_date, artist_id
-)
-  VALUES (
-    'At Folsom Prison',
-    to_date('1968-05-02', 'YYYY-MM-DD'),
-    '1'
+    album_title,
+    release_date, artist_id
+  )
+    VALUES (
+      'At Folsom Prison',
+      to_date('1968-05-02', 'YYYY-MM-DD'),
+      '1'
   );
 
 
-  INSERT INTO tracks (
+INSERT INTO tracks (
       track_title,
-      track_lenght,
+      track_length,
       composer_name,
       album_id
     )
@@ -139,7 +138,7 @@ INSERT INTO albums (
 
 INSERT INTO tracks (
     track_title,
-    track_lenght,
+    track_length,
     composer_name, album_id
   )
     VALUES (
@@ -152,7 +151,7 @@ INSERT INTO tracks (
 
 INSERT INTO tracks (
     track_title,
-    track_lenght,
+    track_length,
     composer_name,
     album_id
   )
@@ -165,7 +164,7 @@ INSERT INTO tracks (
 
 INSERT INTO tracks (
     track_title,
-    track_lenght,
+    track_length,
     composer_name,
     album_id
   )
@@ -180,7 +179,7 @@ INSERT INTO tracks (
 
 INSERT INTO tracks (
     track_title,
-    track_lenght,
+    track_length,
     composer_name,
     album_id
   )
@@ -194,7 +193,7 @@ INSERT INTO tracks (
 
 INSERT INTO tracks (
     track_title,
-    track_lenght,
+    track_length,
     composer_name,
     album_id
   )
@@ -207,7 +206,7 @@ INSERT INTO tracks (
 
 INSERT INTO tracks (
     track_title,
-    track_lenght,
+    track_length,
     composer_name,
     album_id
   )
@@ -220,7 +219,7 @@ INSERT INTO tracks (
 
 INSERT INTO tracks (
     track_title,
-    track_lenght,
+    track_length,
     composer_name,
     album_id
   )
@@ -233,7 +232,7 @@ INSERT INTO tracks (
 
 INSERT INTO tracks (
     track_title,
-    track_lenght,
+    track_length,
     composer_name,
     album_id
   )
@@ -246,7 +245,7 @@ INSERT INTO tracks (
 
 INSERT INTO tracks (
     track_title,
-    track_lenght,
+    track_length,
     composer_name,
     album_id
   )
@@ -259,7 +258,7 @@ INSERT INTO tracks (
 
 INSERT INTO tracks (
     track_title,
-    track_lenght,
+    track_length,
     composer_name,album_id
   )
     VALUES (
@@ -271,7 +270,7 @@ INSERT INTO tracks (
 
 INSERT INTO tracks (
     track_title,
-    track_lenght,
+    track_length,
     composer_name,
     album_id
   )
@@ -283,15 +282,17 @@ INSERT INTO tracks (
     );
 
 
-  UPDATE tracks
+
+UPDATE tracks
       SET composer_name = 'Vincent Rose, Al Lewis, Larry Stock'
       WHERE composer_name = ' Vincent Rose, Al Lewis, Larry Stock';
 
-  UPDATE tracks
+
+
+UPDATE tracks
       SET track_title = 'Here Comes the Sun'
       WHERE composer_name = 'George Harrison'
-      and track_lenght = '3:05';
-
+      and track_length = '3:05';
 
 
 

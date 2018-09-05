@@ -17,7 +17,7 @@ create table albums (
 create table tracks (
   id serial primary key,
   track_title varchar(50) not null,
-  track_lenght integer,
+  track_length varchar(10),
   composer_name varchar(100) not null,
   album_id integer not null references albums(album_id)
 );
